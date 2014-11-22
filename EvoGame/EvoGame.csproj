@@ -34,9 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MathNet.Iridium, Version=2008.8.16.470, Culture=neutral, PublicKeyToken=c061a3ec32cc0c6f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\MathNet.Iridium.dll</HintPath>
+    <Reference Include="MathNet.Iridium">
+      <HintPath>..\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\ForRedistribution\MathNet.Iridium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

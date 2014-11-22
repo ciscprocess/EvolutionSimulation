@@ -52,33 +52,6 @@ namespace EvoGame
             me.mBuffer = new Bitmap(M_WIDTH, M_HEIGHT, PixelFormat.Format32bppArgb);
             me.mOldBuffer = (Bitmap)me.mBuffer.Clone();
 
-
-            
-            int num = 150;
-            for (double r = num - 1; r >= 0 ; r-= 0.2)
-            {
-                int val = (int)Math.Round(((double)r / num) * 255);
-                mOldGfx.DrawEllipse(new Pen(Color.FromArgb(val, val, val)), (int)Math.Round(M_WIDTH/2 - r/2 - 100), (int)Math.Round(M_HEIGHT/2 - r/2), (int)Math.Round(r), (int)Math.Round(r));
-            }
-
-            for (double r = num - 1; r >= 0; r -= 0.2)
-            {
-                int val = (int)Math.Round(((double)r / num) * 255);
-                mOldGfx.DrawEllipse(new Pen(Color.FromArgb(val, val, val)), (int)Math.Round(M_WIDTH / 2 - r / 2 + 100), (int)Math.Round(M_HEIGHT / 2 - r / 2), (int)Math.Round(r), (int)Math.Round(r));
-            }
-
-            for (double r = num - 1; r >= 0; r -= 0.2)
-            {
-                int val = (int)Math.Round(((double)r / num) * 255);
-                mOldGfx.DrawEllipse(new Pen(Color.FromArgb(val, val, val)), (int)Math.Round(M_WIDTH / 2 - r / 2 -210), (int)Math.Round(M_HEIGHT / 2 - r / 2 + 100), (int)Math.Round(r), (int)Math.Round(r));
-            }
-
-            for (double r = num - 1; r >= 0; r -= 0.2)
-            {
-                int val = (int)Math.Round(((double)r / num) * 255);
-                mOldGfx.DrawEllipse(new Pen(Color.FromArgb(val, val, val)), (int)Math.Round(M_WIDTH / 2 - r / 2 + 230), (int)Math.Round(M_HEIGHT / 2 - r / 2 - 100), (int)Math.Round(r), (int)Math.Round(r));
-            }
-            
             
             me.mFoodLocationsR = new List<Point>();
             me.mPoisonLocations = new List<Point>();
@@ -91,7 +64,36 @@ namespace EvoGame
                 me.mFoodLocationsR.Add(new Point(GameState.RAND.Next(0, Width), GameState.RAND.Next(0, Height)));
 
             InitGraphics();
+
+            int num = 150;
+            for (double r = num - 1; r >= 0; r -= 0.2)
+            {
+                int val = (int)Math.Round(((double)r / num) * 255);
+                mOldGfx.DrawEllipse(new Pen(Color.FromArgb(val, val, val)), (int)Math.Round(M_WIDTH / 2 - r / 2 - 100), (int)Math.Round(M_HEIGHT / 2 - r / 2), (int)Math.Round(r), (int)Math.Round(r));
+            }
+
+            for (double r = num - 1; r >= 0; r -= 0.2)
+            {
+                int val = (int)Math.Round(((double)r / num) * 255);
+                mOldGfx.DrawEllipse(new Pen(Color.FromArgb(val, val, val)), (int)Math.Round(M_WIDTH / 2 - r / 2 + 100), (int)Math.Round(M_HEIGHT / 2 - r / 2), (int)Math.Round(r), (int)Math.Round(r));
+            }
+
+            for (double r = num - 1; r >= 0; r -= 0.2)
+            {
+                int val = (int)Math.Round(((double)r / num) * 255);
+                mOldGfx.DrawEllipse(new Pen(Color.FromArgb(val, val, val)), (int)Math.Round(M_WIDTH / 2 - r / 2 - 210), (int)Math.Round(M_HEIGHT / 2 - r / 2 + 100), (int)Math.Round(r), (int)Math.Round(r));
+            }
+
+            for (double r = num - 1; r >= 0; r -= 0.2)
+            {
+                int val = (int)Math.Round(((double)r / num) * 255);
+                mOldGfx.DrawEllipse(new Pen(Color.FromArgb(val, val, val)), (int)Math.Round(M_WIDTH / 2 - r / 2 + 230), (int)Math.Round(M_HEIGHT / 2 - r / 2 - 100), (int)Math.Round(r), (int)Math.Round(r));
+            }
+            
+
             InitGame();
+
+
 
             gfxPanel.Click += new EventHandler(gfxPanel_Click);
         }

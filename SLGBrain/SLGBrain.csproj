@@ -30,7 +30,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
@@ -61,7 +61,7 @@
       <HintPath>..\AForge.NET\Release\AForge.Neuro.dll</HintPath>
     </Reference>
     <Reference Include="MathNet.Iridium">
-      <HintPath>..\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Binaries\Release\MathNet.Iridium.dll</HintPath>
+      <HintPath>..\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\ForRedistribution\MathNet.Iridium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
