@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace LogicIO.Gates
 {
     [Serializable]
-    public abstract class Gate : IMutator<Gate>, ICloneable
+    public abstract class Gate : IMutatable<Gate>, ICloneable
     {
         
         public static double TIME_SCAN = 0.0;

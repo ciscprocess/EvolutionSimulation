@@ -125,7 +125,10 @@ namespace EvoGame
                 {
                     case ControlMode.SMITE:
                         if (ent != null)
-                            ent.Smite();
+                        {
+                            for (int i = 0; i < 10; i++)
+                                ent.Mutate();
+                        }
                         break;
                     case ControlMode.FEED:
                         if (ent != null)

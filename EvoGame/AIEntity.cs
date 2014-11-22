@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace EvoGame
 {
     [Serializable]
-    public class AIEntity : ICloneable, IMutator<AIEntity>
+    public class AIEntity : ICloneable, IMutatable<AIEntity>
     {
         private Brain mBrain;
 

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace LogicIO
+namespace ProtoRecurrentBrain
 {
-    public interface IMutatable<T>
+    public class RecurrentBrain
     {
-        T Mutate();
     }
 }

@@ -6,7 +6,7 @@ using System.Text;
 namespace LogicIO
 {
     [Serializable]
-    public abstract class Brain : ICloneable, IMutator<Brain>
+    public abstract class Brain : ICloneable, IMutatable<Brain>
     {
         protected static double META_RATE = 0.05;
         protected double mRate = 0.12;

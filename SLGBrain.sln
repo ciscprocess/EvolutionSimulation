@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLGBrain", "SLGBrain\SLGBrain.csproj", "{0A3A5600-68E4-4D9B-9EF3-C9059E810A9E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvoGame", "EvoGame\EvoGame.csproj", "{23BA95DE-DE0F-4315-A983-EBFA631A2535}"
@@ -16,10 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainTester", "BrainTester\BrainTester.csproj", "{577067B8-07B6-4539-8867-759A066E0D04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoRecurrentBrain", "ProtoRecurrentBrain\ProtoRecurrentBrain.csproj", "{1BFDFC14-144C-4274-95C7-E809A16A60EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brain", "Brain\Brain.csproj", "{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}"
+EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = SLGBrain.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -69,8 +72,31 @@ Global
 		{577067B8-07B6-4539-8867-759A066E0D04}.Release|Mixed Platforms.Build.0 = Release|x86
 		{577067B8-07B6-4539-8867-759A066E0D04}.Release|x86.ActiveCfg = Release|x86
 		{577067B8-07B6-4539-8867-759A066E0D04}.Release|x86.Build.0 = Release|x86
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1BFDFC14-144C-4274-95C7-E809A16A60EB}.Release|x86.ActiveCfg = Release|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{297FEE6E-A990-48CB-A7EA-89F2DC392C1A}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SLGBrain.vsmdi
 	EndGlobalSection
 EndGlobal
